@@ -1,0 +1,164 @@
+/* ✅ Container Alignment */
+.about-text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* ✅ Subheading */
+.abouth6 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+  font-weight: 500;
+  line-height: 1.7;
+  max-width: 800px;
+  margin-bottom: 2rem;
+  text-align: center;
+  position: relative;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: rgba(252, 245, 245, 0.863);
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.5);
+}
+/* ✅ Flex Containers for Skill Cards */
+.aboutdivs {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  margin: 2rem;
+  flex-wrap: wrap; /* ← Important for wrapping on smaller screens */
+  gap: 2rem; /* Optional for clean spacing */
+  margin-top: 1rem;
+  position: relative;
+}
+
+/* ✅ Skill Cards */
+.div1,
+.div2,
+.div3,
+.div4,
+.div5,
+.div6 {
+  height: 155px;
+  width: 155px;
+  border: 2px solid rgba(41, 36, 36, 0.2);
+  text-align: center;
+  padding-top: 25px;
+  border-radius: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  will-change: transform;
+  cursor: pointer;
+  background-color: #ffffff;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* ✅ Hover Effects */
+.div1:hover,
+.div2:hover,
+.div3:hover,
+.div4:hover,
+.div5:hover,
+.div6:hover {
+  transform: scale(1.07);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
+}
+
+/* ✅ Unique Borders & Text Colors */
+.div1 {
+  border-top: 4px solid yellow;
+}
+.div2 {
+  border-top: 4px solid #4caf50;
+}
+.div3 {
+  border-top: 4px solid red;
+}
+.div4 {
+  border-top: 4px solid purple;
+  color: purple;
+}
+.div5 {
+  border-top: 4px solid blue;
+  color: blue;
+}
+.div6 {
+  border-top: 4px solid rgb(16, 224, 231);
+  color: rgb(16, 224, 231);
+}
+
+/* 📱 Mobile (≤768px) */
+@media (max-width: 768px) {
+  .abouth1 {
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .abouth6 {
+    font-size: 0.95rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    text-align: center;
+  }
+
+  .aboutdivs,
+  .aboutdivs2 {
+    margin-left: 0;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .div1,
+  .div2,
+  .div3,
+  .div4,
+  .div5,
+  .div6 {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    padding: 1.5rem 0;
+  }
+}
+
+/* 💻 Tablet (≤1024px) */
+@media (max-width: 1024px) {
+  .abouth1 {
+    font-size: 2rem;
+    padding-left: 2rem;
+    padding-top: 3rem;
+    text-align: center;
+  }
+
+  .abouth6 {
+    font-size: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-align: center;
+  }
+
+  .aboutdivs,
+  .aboutdivs2 {
+    margin-left: 2rem;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .div1,
+  .div2,
+  .div3,
+  .div4,
+  .div5,
+  .div6 {
+    width: 45%;
+    max-width: 200px;
+    height: auto;
+  }
+}

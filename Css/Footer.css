@@ -1,0 +1,74 @@
+.footer {
+  border-top: 2px solid #1788ae;
+  padding: 20px 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+  will-change: transform;
+}
+
+.footer-text {
+  font-size: 1rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+  font-weight: 500;
+}
+
+.footer-logo {
+  width: 70px;
+  height: auto;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 16px;
+  font-size: 1.5rem;
+  justify-content: flex-end;
+  will-change: transform;
+}
+/* ICON BRAND COLORS */
+.footer-icons .fa-instagram {
+  background: linear-gradient(45deg, #feda75, #d62976, #962fbf, #4f5bd5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  will-change: transform;
+}
+.footer-icons .fa-github {
+  color: #333; /* GitHub Black */
+}
+
+.footer-icons .fa-square-facebook {
+  color: #1877f2; /* Facebook Blue */
+  will-change: transform;
+}
+
+.footer-icons i {
+  transition: color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+  will-change: transform;
+}
+
+.footer-icons i:hover {
+  transform: scale(1.4);
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-text,
+  .footer-icons {
+    justify-content: center;
+  }
+
+  .footer-icons {
+    margin-top: 10px;
+  }
+}

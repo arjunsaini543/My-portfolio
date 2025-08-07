@@ -1,0 +1,251 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 1350px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+body.light {
+  background-color: #f5f7fa;
+  color: black;
+}
+
+body.dark {
+  color: white;
+  background-color: #12121283;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Lato", sans-serif;
+  max-width: 1350px;
+}
+
+.canvas {
+  position: absolute;
+  top: 0;
+}
+
+#wrapper-canva {
+  width: 100px;
+  height: 100%;
+  display: block;
+  background-color: #fff;
+}
+
+/* Navbar */
+
+.navbar {
+  background-color: transparent !important;
+  transition: all 0.6s ease;
+  opacity: 0;
+  transform: translateY(-30px);
+  animation: slideDown 0.6s ease forwards;
+}
+
+@keyframes slideDown {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.navbar-brand img {
+  width: 80px;
+  will-change: transform;
+  transition: transform 0.3s ease;
+}
+
+.navbar-brand img:hover {
+  transform: scale(1.05);
+}
+
+.nav-link {
+  color: black !important;
+  position: relative;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: sans-serif;
+  margin-right: 20px;
+  will-change: transform;
+  transition: all 0.3s ease;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2.6px;
+  bottom: 0;
+  left: 0;
+  background-color: #00c6ff;
+  transition: 0.3s ease-in-out;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-link:hover {
+  color: #00c6ff !important;
+}
+.navbar-toggler {
+  background: linear-gradient(190deg, #00c6ff, rgba(0, 0, 0, 0.1)) !important;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 10px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+}
+.navbar-toggler:hover {
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  transform: scale(1.05);
+}
+
+.navbar-toggler .navbar-toggler-icon {
+  filter: brightness(1) invert(1);
+}
+.modern-button {
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: white;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border: none;
+  padding: 12px 6px;
+  will-change: transform;
+  font-size: 18px;
+  font-weight: 600;
+  will-change: transform;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(0, 114, 255, 0.4);
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  width: 9rem;
+}
+
+.modern-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  will-change: transform;
+  background: linear-gradient(120deg, rgba(255, 255, 255, 0.3), transparent);
+  transition: all 0.5s ease;
+  z-index: 0;
+}
+
+.modern-button:hover::before {
+  left: 100%;
+}
+
+.modern-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(0, 114, 255, 0.6);
+}
+
+/* mobile button */
+.mobile-only-btn {
+  position: relative;
+  display: inline-block;
+  will-change: transform;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  color: white;
+  padding: 10px 30px 10px 30px; /* Less padding for a smaller button */
+  border: none;
+  border-radius: 40px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  overflow: visible; /* Important: allows the icon to overflow */
+  box-shadow: 0 8px 20px rgba(0, 114, 255, 0.3);
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+}
+
+.mobile-only-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  will-change: transform;
+  height: 100%;
+  background: linear-gradient(120deg, rgba(255, 255, 255, 0.2), transparent);
+  transition: left 0.5s ease;
+  z-index: 0;
+}
+
+.mobile-only-btn:hover::before {
+  left: 100%;
+}
+
+.mobile-only-btn:hover {
+  transform: scale(1.01);
+  background: linear-gradient(90deg, #0072ff, #00c6ff);
+  box-shadow: 0 12px 30px rgba(0, 114, 255, 0.4);
+}
+
+.mobile-only-btn i {
+  position: absolute;
+  bottom: -28px; /* 🔥 Makes the icon overflow down */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.4rem;
+  color: black;
+  will-change: transform;
+  transition: transform 0.3s ease-in-out;
+}
+
+.mobile-only-btn:hover i {
+  transform: translateX(-50%) translateY(5px); /* Animates down slightly */
+}
+/* Hide by default */
+.mobile-only-btn {
+  display: none;
+}
+
+/* Show on tablets and mobiles (screen width up to 1024px) */
+@media screen and (max-width: 767px) {
+  .mobile-only-btn {
+    display: inline-block; /* or flex, block depending on layout */
+    padding: 0.5rem 1rem;
+    background-color: #1788ae;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+}
+/* spans */
+.spans {
+  color: green;
+}
+
+/* Dark mode */
+.dark-toggle-btn {
+  padding: 2px 5px;
+  font-size: 20px;
+  font-weight: 550;
+  border: none;
+  border-radius: 100%;
+  background: rgba(128, 128, 128, 0.116);
+  cursor: pointer;
+  will-change: transform;
+  transition: transform 0.3s ease-in-out;
+}
+
+.dark-toggle-btn:hover {
+  transform: scale(1.1);
+}
+
+/* Dark Mode Styling for Button */
+
+body.dark .dark-toggle-btn:hover {
+  background: white;
+  box-shadow: 0 6px 16px rgba(255, 255, 255, 0.2);
+}

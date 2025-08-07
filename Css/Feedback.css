@@ -1,0 +1,27 @@
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  will-change: transform;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 500px;
+}
+
+.swiper-slide img {
+  display: block;
+  border-radius: 1rem;
+  width: 100%;
+}
+.swiper-h2 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+}
+.swiper-h6 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 550;
+}
