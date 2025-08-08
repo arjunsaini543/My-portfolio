@@ -38,7 +38,7 @@ const Modal = ({ setIsOpen }) => {
             </p>
           </div>
           <div className="image-cont">
-            <img className="code-img" src="./coder.svg" alt="" />
+            <img className="code-img" src="./hero/coder.svg" alt="" />
           </div>
         </div>
       </div>
