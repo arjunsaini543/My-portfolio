@@ -4,7 +4,7 @@ import Marquee from "react-fast-marquee";
 const Marq = () => {
   return (
     <>
-      <div className="marq-wrapper">
+      <div className="marq-wrapper" data-aos="zoom-in-up">
         <Marquee speed={50}>
           <div className="img-div">
             <img className="marq-img" src="./public/marq/html.png" alt="" />
@@ -30,8 +30,11 @@ const Marq = () => {
             <img className="marq-img" src="./public/marq/React js.png" alt="" />
           </div>
           <div className="img-div">
+            <img className="marq-img" src="./public/marq/Github.png" alt="" />
+          </div>
+          <div className="img-div">
             <img
-              className="marq-img"
+              className="marq-img "
               src="./public/marq/Wordpress.png"
               alt=""
             />

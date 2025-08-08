@@ -25,7 +25,7 @@ const Hero = () => {
               <div className="hero-image">
                 <img
                   data-aos="fade-left"
-                  src="./about-removebg-edits.PNG"
+                  src="./hero/about-removebg-edits.PNG"
                   alt="Hero Logo"
                 />
               </div>

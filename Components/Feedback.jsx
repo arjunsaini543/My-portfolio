@@ -32,7 +32,7 @@ const Feedback = () => {
       >
         {/* slider  1 */}
         <SwiperSlide>
-          <img src="./saatvik.webp" />
+          <img src="./public/Feedback/saatvik.webp" />
           <h2 className="swiper-h2">Rakesh sharma</h2>
           <h6 className="swiper-h6">
             Arjun was a wonderful developer to work with! He anticipated
@@ -44,10 +44,7 @@ const Feedback = () => {
 
         {/* slider  2 */}
         <SwiperSlide>
-          <img
-            src="./kira.webp"
-            // style={{ height: "18rem", width: "20rem" }}
-          />
+          <img src="./Feedback/kira.webp" />
           <h2 className="swiper-h2">Emily Williams</h2>
           <h6 className="swiper-h6">
             Arjun was a wonderful developer to work with! He anticipated
@@ -59,7 +56,7 @@ const Feedback = () => {
 
         {/* slider  3 */}
         <SwiperSlide>
-          <img src="./Srihari.webp" />
+          <img src="./Feedback/Srihari.webp" />
           <h2 className="swiper-h2">Mohit pandit</h2>
           <h6 className="swiper-h6">
             Arjun was a wonderful developer to work with! He anticipated

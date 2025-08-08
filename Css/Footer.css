@@ -18,18 +18,26 @@
 }
 
 .footer-logo {
-  width: 70px;
+  width: 90px;
   height: auto;
+  will-change: transform;
+  transition: transform 0.3s ease-in-out;
+}
+.footer-logo:hover {
+  transform: scale(1.1);
 }
 
 .footer-icons {
   display: flex;
   gap: 16px;
-  font-size: 1.5rem;
+  font-size: 2rem;
   justify-content: flex-end;
+  margin-right: 4.5rem;
   will-change: transform;
 }
-/* ICON BRAND COLORS */
+
+/* Icon color */
+
 .footer-icons .fa-instagram {
   background: linear-gradient(45deg, #feda75, #d62976, #962fbf, #4f5bd5);
   -webkit-background-clip: text;
@@ -38,14 +46,15 @@
   will-change: transform;
 }
 .footer-icons .fa-github {
-  color: #333; /* GitHub Black */
+  color: #333;
 }
-
-.footer-icons .fa-square-facebook {
-  color: #1877f2; /* Facebook Blue */
+.footer-icons .fa-square-linkedin {
+  color: #4f5bd5;
+}
+.footer-icons .fa-square-whatsapp {
+  color: green;
   will-change: transform;
 }
-
 .footer-icons i {
   transition: color 0.3s ease, transform 0.3s ease;
   cursor: pointer;
@@ -55,14 +64,43 @@
 .footer-icons i:hover {
   transform: scale(1.4);
 }
+.scroll-top {
+  position: fixed;
+  bottom: 40px;
+  right: 30px;
+  background: linear-gradient(135deg, #4e54c8, #8f94fb);
+  color: white;
+  padding: 14px 16px;
+  border-radius: 50%;
+  z-index: 1000;
+  font-size: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  opacity: 0;
+  will-change: transform;
+  animation: fadeInUp 0.8s ease forwards;
+  transition: transform 0.3s ease-in-out;
+}
 
-/* Responsive for mobile */
+.scroll-top:hover {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @media (max-width: 768px) {
   .footer {
     flex-direction: column;
     text-align: center;
   }
-
+  .scroll-top {
+    padding: 4px;
+  }
   .footer-text,
   .footer-icons {
     justify-content: center;
@@ -70,5 +108,33 @@
 
   .footer-icons {
     margin-top: 10px;
+    margin-right: 0;
   }
+}
+.icon-tooltip-wrap {
+  position: relative;
+  display: inline-block;
+}
+
+.icon-tooltip-label {
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  background: linear-gradient(135deg, #1ecbe1, #1788ae);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  z-index: 10;
+}
+
+.icon-tooltip-wrap:hover .icon-tooltip-label {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-10px);
 }

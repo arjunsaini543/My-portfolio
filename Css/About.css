@@ -45,7 +45,6 @@
   line-height: 1.7;
 }
 
-/* 📱 Mobile (≤768px) Responsive */
 @media (max-width: 768px) {
   .aboutsection {
     flex-direction: column;
@@ -70,7 +69,6 @@
   }
 }
 
-/* 💻 Tablet (≤1024px) Responsive */
 @media (max-width: 1024px) {
   .aboutsection {
     flex-direction: column;

@@ -14,7 +14,7 @@ const Modal = ({ setIsOpen }) => {
             </h2>
 
             <p className="modal-text">
-              👋 Hey there! I’m{" "}
+              👋 Hey there! I’m
               <strong className="highlight">Arjun Saini</strong> — a passionate,
               creative, and detail-oriented
               <span className="highlight"> Frontend Web Developer</span>. I
@@ -23,8 +23,8 @@ const Modal = ({ setIsOpen }) => {
             </p>
 
             <p className="modal-text">
-              🛠️ I build using <strong className="highlight">HTML</strong>,{" "}
-              <strong className="highlight">CSS</strong>,{" "}
+              🛠️ I build using <strong className="highlight">HTML</strong>,
+              <strong className="highlight">CSS</strong>,
               <strong className="highlight">JavaScript</strong>, and modern
               frameworks like <strong className="highlight">React.js</strong>.
               My focus is on clean code, pixel-perfect designs, and intuitive
@@ -32,7 +32,7 @@ const Modal = ({ setIsOpen }) => {
             </p>
 
             <p className="modal-text">
-              🌟 Let’s collaborate and build something{" "}
+              🌟 Let’s collaborate and build something
               <strong className="highlight">amazing</strong> together. Your
               vision + my code = magic.
             </p>

@@ -5,7 +5,7 @@ const About = () => {
   return (
     <>
       <h1 className="client-text" data-aos="zoom-in">
-        About{" "}
+        About
       </h1>
       <div className="container ">
         <div className="row ">
@@ -14,7 +14,7 @@ const About = () => {
               <img
                 className="aboutimage "
                 data-aos="fade-right"
-                src="./about-casual-edits.PNG"
+                src="./hero/about-removebg-edits.PNG"
                 alt=""
               />
             </div>
@@ -41,19 +41,18 @@ const About = () => {
       </div>
       <div className="Skills-container">
         <div className="about-text-container">
-          {" "}
           <h1 className="client-text" data-aos="zoom-in">
             Skills
           </h1>
           <h6 className="abouth6 pt-2" data-aos="zoom-in">
             <span className="spans">Hi, I’m Arjun </span> a passionate and
-            detail-oriented frontend developer witha strong focus on creating{" "}
+            detail-oriented frontend developer witha strong focus on creating
             <br /> modern, responsive, and user-friendly webinterfaces. Over
             time, I’ve developed a solid skill <br /> set in technologies like
             HTML, CSS, JavaScript, React.js.
           </h6>
         </div>
-        <div className="marq-wrapper">
+        <div className="marq-wrapper" data-aos="zoom-in-up">
           <Marquee speed={50}>
             <div className="img-div">
               <img className="marq-img" src="./public/marq/html.png" alt="" />
@@ -83,6 +82,9 @@ const About = () => {
               />
             </div>
             <div className="img-div">
+              <img className="marq-img" src="./public/marq/Github.png" alt="" />
+            </div>
+            <div className="img-div">
               <img
                 className="marq-img"
                 src="./public/marq/Wordpress.png"
@@ -106,11 +108,11 @@ const About = () => {
           </div>
 
           <div className="div4" data-aos="zoom-in-left">
-            <h1 className="">72%</h1>
+            <h1 className="">86%</h1>
             <h3>React Js</h3>
           </div>
           <div className="div5" data-aos="zoom-in-right">
-            <h1 className="">43%</h1>
+            <h1 className="">85%</h1>
             <h3>WordPress</h3>
           </div>
           <div className="div6" data-aos="zoom-in-right">

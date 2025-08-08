@@ -8,15 +8,13 @@ import { useEffect } from "react";
 function App() {
   useEffect(() => {
     AOS.init({
-      duration: 1000, // animation duration in ms
-      // once: false,
-      // mirror: true,
-      once: false, // set to false to animate every time you scroll
-      offset: 50, // how far from the element before triggering (in px)
-      delay: 1, // delay in ms before animation starts
-      easing: "ease", // easing type
-      mirror: true, // whether elements animate out while scrolling past
-      anchorPlacement: "top-bottom", // where in viewport the animation should trigger
+      duration: 1000,
+      once: false,
+      offset: 50,
+      delay: 1,
+      easing: "ease",
+      mirror: true,
+      anchorPlacement: "top-bottom",
     });
   }, []);
   return (

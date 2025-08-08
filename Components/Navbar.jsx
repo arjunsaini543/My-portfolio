@@ -12,10 +12,10 @@ const Navbar = () => {
   }, [darkMode]);
 
   return (
-    <nav className="navbar navbar-expand-lg">
+    <nav className="navbar navbar-expand-lg ">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/Home">
-          <img src="./name-logo-black.svg" className="ms-3" alt="" />
+          <img src="./Logo/name-logo.svg" className="ms-3" alt="" />
         </Link>
         <button className="mobile-only-btn" onClick={scrollDown}>
           Scrool Down<i className="fa-solid fa-arrow-down"></i>
@@ -63,7 +63,11 @@ const Navbar = () => {
           className="dark-toggle-btn me-3"
           onClick={() => setDarkMode(!darkMode)}
         >
-          {darkMode ? "☀️" : "🌙 "}
+          {darkMode ? (
+            <img src="./dark-mode/sun.png" style={{ width: "30px" }} alt="" />
+          ) : (
+            <img src="./dark-mode/moon.svg" style={{ width: "30px" }} alt="" />
+          )}
         </button>
       </div>
     </nav>

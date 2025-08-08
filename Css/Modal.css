@@ -13,7 +13,7 @@
   will-change: transform;
   z-index: 999;
   animation: fadeInOverlay 0.3s ease-in-out;
-  padding: 1rem; /* Prevent content from touching screen edges */
+  padding: 1rem;
 }
 
 @keyframes fadeInOverlay {

@@ -17,7 +17,6 @@ body.dark {
 
 body {
   overflow-x: hidden;
-  font-family: "Lato", sans-serif;
   max-width: 1350px;
 }
 
@@ -154,13 +153,13 @@ body {
   will-change: transform;
   background: linear-gradient(90deg, #00c6ff, #0072ff);
   color: white;
-  padding: 10px 30px 10px 30px; /* Less padding for a smaller button */
+  padding: 10px 30px 10px 30px;
   border: none;
   border-radius: 40px;
   font-size: 1.2rem;
   font-weight: 600;
   cursor: pointer;
-  overflow: visible; /* Important: allows the icon to overflow */
+  overflow: visible;
   box-shadow: 0 8px 20px rgba(0, 114, 255, 0.3);
   transition: all 0.3s ease-in-out;
   z-index: 1;
@@ -191,7 +190,7 @@ body {
 
 .mobile-only-btn i {
   position: absolute;
-  bottom: -28px; /* 🔥 Makes the icon overflow down */
+  bottom: -28px;
   left: 50%;
   transform: translateX(-50%);
   font-size: 1.4rem;
@@ -201,17 +200,17 @@ body {
 }
 
 .mobile-only-btn:hover i {
-  transform: translateX(-50%) translateY(5px); /* Animates down slightly */
+  transform: translateX(-50%) translateY(5px);
 }
-/* Hide by default */
+
+/* Hide the button */
 .mobile-only-btn {
   display: none;
 }
 
-/* Show on tablets and mobiles (screen width up to 1024px) */
 @media screen and (max-width: 767px) {
   .mobile-only-btn {
-    display: inline-block; /* or flex, block depending on layout */
+    display: inline-block;
     padding: 0.5rem 1rem;
     background-color: #1788ae;
     color: white;
@@ -221,29 +220,30 @@ body {
     cursor: pointer;
   }
 }
-/* spans */
 .spans {
   color: green;
 }
 
 /* Dark mode */
+
 .dark-toggle-btn {
   padding: 2px 5px;
   font-size: 20px;
   font-weight: 550;
   border: none;
-  border-radius: 100%;
-  background: rgba(128, 128, 128, 0.116);
+  border-radius: 1rem;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.171),
+    rgba(0, 204, 255, 0.226)
+  );
   cursor: pointer;
   will-change: transform;
   transition: transform 0.3s ease-in-out;
 }
-
 .dark-toggle-btn:hover {
   transform: scale(1.1);
 }
-
-/* Dark Mode Styling for Button */
 
 body.dark .dark-toggle-btn:hover {
   background: white;

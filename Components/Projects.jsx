@@ -20,95 +20,89 @@ import "../Css/Projects.css";
 
 const projects = [
   {
-    title: "Harigurus",
-    subtitle: "(Event Booking)",
+    title: "Burger",
+    subtitle: "(Food)",
     description:
-      "HariGurus is a one-stop-shop for all Hindu religious, customs and traditional requirements. Built the complete site from scratch.",
-    image: "./macbook 1.png",
+      "This provides all type of burger thatb you can order online. they have best reviews and they delevery on time.",
+    image: "./public/Projects/Burger.png",
     link: "",
     tags: [
+      "#HTML",
+      "#Css",
+      "#Bootstrap",
+      "#Java script",
       "#react.js",
-      "#express.js",
-      "#node.js",
-      "#swiper.js",
-      "#mongoDB",
-      "#mongoose",
-      "#css",
-      "#javascript",
-      "#figma",
+      "#Figma",
     ],
     align: "left",
     color: "cyan",
   },
   {
-    title: "Web Dev English",
-    subtitle: "(Coaching and Consulting)",
+    title: "Technical Store",
+    subtitle: "(Produts)",
     description:
-      "US-based English Coach's website for guiding coaches. Improved existing look and added new features and sections.",
-    image: "/macbook 1.png",
+      "Here you can buy any product like smart phone , laptops , earphones and etc. at 45% discount.",
+    image: "./public/Projects/Laptop.png",
     link: "",
     tags: [
+      "#HTML",
+      "#Css",
+      "#Bootstrap",
+      "#Java script",
       "#react.js",
-      "#next.js",
-      "#css",
-      "#figma",
-      "#javascript",
-      "#mongoDB",
+      "#Figma",
     ],
     align: "right",
     color: "cyan",
   },
   {
-    title: "Web Dev English",
-    subtitle: "(Coaching and Consulting)",
+    title: "Cloths Center",
+    subtitle: "(Cloths)",
     description:
-      "US-based English Coach's website for guiding coaches. Improved existing look and added new features and sections.",
-    image: "/macbook 1.png",
+      "Here you can buy cloths we have many brand cloths like zara , H&M , gucci etc. ",
+    image: "./public/Projects/Cloths.png",
     link: "",
     tags: [
+      "#HTML",
+      "#Css",
+      "#Bootstrap",
+      "#Java script",
       "#react.js",
-      "#next.js",
-      "#css",
-      "#figma",
-      "#javascript",
-      "#mongoDB",
+      "#Figma",
     ],
     align: "left",
     color: "cyan",
   },
   {
-    title: "Web Dev English",
-    subtitle: "(Coaching and Consulting)",
+    title: "Edusity",
+    subtitle: "(Educational and Coaching )",
     description:
       "US-based English Coach's website for guiding coaches. Improved existing look and added new features and sections.",
-    image: "/macbook 1.png",
+    image: "./public/Projects/Edusity.png",
     link: "",
     tags: [
+      "#HTML",
+      "#Css",
+      "#Bootstrap",
+      "#Java script",
       "#react.js",
-      "#next.js",
-      "#css",
-      "#figma",
-      "#javascript",
-      "#mongoDB",
+      "#Figma",
     ],
     align: "right",
     color: "cyan",
   },
-  // ... other projects (keep same structure) ...
 ];
 
 const Projects = () => {
   useEffect(() => {
     AOS.init({
-      duration: 2000, // animation duration in ms
-      // once: false,
-      // mirror: true,
-      once: false, // set to false to animate every time you scroll
-      offset: 50, // how far from the element before triggering (in px)
-      delay: 1, // delay in ms before animation starts
-      easing: "ease", // easing type
-      mirror: true, // whether elements animate out while scrolling past
-      anchorPlacement: "top-bottom", // where in viewport the animation should trigger
+      duration: 2000,
+      once: false,
+      offset: 50,
+      delay: 1,
+      easing: "ease",
+      mirror: true,
+      anchorPlacement: "top-bottom",
     });
   }, []);
   return (
@@ -128,14 +122,18 @@ const Projects = () => {
                 className={`project-block ${isLeft ? "" : "reverse"}`}
               >
                 {/* Image */}
-                <div className="project-image-wrap mt-5" data-aos="fade-right">
-                  {/* <a href={project.link} target="_blank" rel="noreferrer"> */}
+                <div
+                  className="project-image-wrap mt-5 tooltip-container"
+                  data-aos="fade-right"
+                >
                   <img
                     src={project.image}
                     alt={project.title}
                     className="project-img"
                   />
-                  {/* </a> */}
+                  <div className="tooltip-text">
+                    Details are available to the side.
+                  </div>
                 </div>
 
                 {/* Connector */}
@@ -192,7 +190,7 @@ const Projects = () => {
       >
         {/* slider  1 */}
         <SwiperSlide>
-          <img src="./saatvik.webp" />
+          <img src="./Feedback/saatvik.webp" />
           <h2 className="swiper-h2">Rakesh sharma</h2>
           <h6 className="swiper-h6">
             Arjun was a wonderful developer to work with! He anticipated
@@ -204,10 +202,7 @@ const Projects = () => {
 
         {/* slider  2 */}
         <SwiperSlide>
-          <img
-            src="./kira.webp"
-            // style={{ height: "18rem", width: "20rem" }}
-          />
+          <img src="./Feedback/kira.webp" />
           <h2 className="swiper-h2">Emily Williams</h2>
           <h6 className="swiper-h6">
             Arjun was a wonderful developer to work with! He anticipated
@@ -219,7 +214,7 @@ const Projects = () => {
 
         {/* slider  3 */}
         <SwiperSlide>
-          <img src="./Srihari.webp" />
+          <img src="./Feedback/Srihari.webp" />
           <h2 className="swiper-h2">Mohit pandit</h2>
           <h6 className="swiper-h6">
             Arjun was a wonderful developer to work with! He anticipated

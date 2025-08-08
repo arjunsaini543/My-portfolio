@@ -21,7 +21,7 @@
   height: 100%;
   background-color: #00c6ff;
   z-index: 0;
-  display: none; /* hidden by default on small screens */
+  display: none;
 }
 
 /* Show on medium and larger screens */
@@ -70,7 +70,7 @@
 
 .project-img {
   width: 100%;
-  max-width: 450px;
+  max-width: 600px;
   will-change: transform;
   border-radius: 8px;
   transition: transform 0.4s ease;
@@ -175,7 +175,6 @@
   padding-top: 1rem;
 }
 
-/* Color Dot + Title Styling */
 .dot-orange,
 .title-orange {
   color: #ea580c;
@@ -205,14 +204,54 @@
   color: #f43f5e;
   border-color: #f43f5e;
 }
-/* rsponsive */
+
+/* pop-up Effect on mac img*/
+
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip-text {
+  position: absolute;
+  top: -10%;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  background: linear-gradient(135deg, #1ecbe1, #1788ae);
+  color: white;
+  padding: 9px 10px;
+  border-radius: 6px;
+  white-space: nowrap;
+  font-size: 15px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  z-index: 10;
+}
+
+.tooltip-container:hover .tooltip-text {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-13px);
+}
+
 @media (max-width: 767px) {
   .latest-heading {
     font-size: 1.75rem;
     padding: 0.5rem 1rem;
     width: auto;
   }
+  .tooltip-text {
+    font-size: 13px;
+    padding: 7px 9px;
+    top: -12%;
+    transform: translateX(-50%) translateY(10px);
+  }
 
+  .tooltip-container:hover .tooltip-text {
+    transform: translateX(-50%) translateY(-17px);
+  }
   .project-block {
     flex-direction: column !important;
     align-items: center;
@@ -284,7 +323,6 @@
   margin: 3rem auto;
   border-radius: 2rem;
 }
-/* 📱 Mobile (≤480px) */
 @media (max-width: 480px) {
   .client-text {
     font-size: 1.5rem;
@@ -294,7 +332,6 @@
   }
 }
 
-/* 📲 Tablets (481px–768px) */
 @media (max-width: 768px) and (min-width: 481px) {
   .client-text {
     font-size: 2rem;

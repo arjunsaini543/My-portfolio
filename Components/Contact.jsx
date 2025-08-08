@@ -31,16 +31,13 @@ const Contact = () => {
     <>
       <div
         className="banner-image"
-        style={{ backgroundImage: `url("./banner-1.jpg")` }}
+        style={{ backgroundImage: `url("./contact/banner-1.jpg")` }}
       >
         <h2 className="client-text " data-aos="zoom-in">
           Let's work together
         </h2>
         <div className="contact-section">
           <div className="contact-containr">
-            <div className="contact-info" data-aos="fade-right">
-              <img src="./contact-me.svg" alt="Contact Illustration" />
-            </div>
             <div className="contact-form">
               <form onSubmit={onSubmit} data-aos="fade-up-left">
                 <label>
