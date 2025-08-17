@@ -33,12 +33,12 @@ const Modal = ({ setIsOpen }) => {
 
             <p className="modal-text">
               🌟 Let’s collaborate and build something
-              <strong className="highlight">amazing</strong> together. Your
+              <strong className="highlight"> amazing</strong> together. Your
               vision + my code = magic.
             </p>
           </div>
           <div className="image-cont">
-            <img className="code-img" src="./coder.svg" alt="" />
+            <img className="code-img" src="./hero/coder.svg" alt="" />
           </div>
         </div>
       </div>

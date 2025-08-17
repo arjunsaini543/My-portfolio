@@ -1,9 +1,3 @@
-// Aos
-import React, { useEffect } from "react";
-import AOS from "aos";
-
-import "aos/dist/aos.css";
-
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -25,7 +19,7 @@ const projects = [
     description:
       "This provides all type of burger thatb you can order online. they have best reviews and they delevery on time.",
     image: "./public/Projects/Burger.png",
-    link: "",
+    link: "https://tastyeburgers.netlify.app/",
     tags: [
       "#HTML",
       "#Css",
@@ -38,12 +32,12 @@ const projects = [
     color: "cyan",
   },
   {
-    title: "Technical Store",
-    subtitle: "(Produts)",
+    title: "FoodCenter",
+    subtitle: "(Food)",
     description:
-      "Here you can buy any product like smart phone , laptops , earphones and etc. at 45% discount.",
-    image: "./public/Projects/Laptop.png",
-    link: "",
+      "Here you can order food at 45% discount or delievery within 15 minuts.",
+    image: "./public/Projects/tomato.png",
+    link: "https://foodcenters.netlify.app/",
     tags: [
       "#HTML",
       "#Css",
@@ -61,7 +55,7 @@ const projects = [
     description:
       "Here you can buy cloths we have many brand cloths like zara , H&M , gucci etc. ",
     image: "./public/Projects/Cloths.png",
-    link: "",
+    link: "https://shopingcenter.netlify.app/",
     tags: [
       "#HTML",
       "#Css",
@@ -74,12 +68,12 @@ const projects = [
     color: "cyan",
   },
   {
-    title: "Edusity",
-    subtitle: "(Educational and Coaching )",
+    title: "Elito",
+    subtitle: "(informative )",
     description:
-      "US-based English Coach's website for guiding coaches. Improved existing look and added new features and sections.",
-    image: "./public/Projects/Edusity.png",
-    link: "",
+      "This website is a dummy from elito. i make this website for practice.",
+    image: "./public/Projects/Elito.png",
+    link: "https://elitos.netlify.app/",
     tags: [
       "#HTML",
       "#Css",
@@ -91,20 +85,31 @@ const projects = [
     align: "right",
     color: "cyan",
   },
+  {
+    title: "Gradient Color",
+    subtitle: "(Make your own gradient color)",
+    description:
+      "In this website you can make your own favourite gradient color in just 1 minuts.",
+    image: "./public/Projects/gradient-color.png",
+    link: "https://makegradientcolor.netlify.app/",
+    tags: ["#HTML", "#Css", "#Java script", "#Figma"],
+    align: "left",
+    color: "cyan",
+  },
+  {
+    title: "Weather",
+    subtitle: "(Weather forcast )",
+    description:
+      "on this website you can know the weather condition in your state or any location.",
+    image: "./public/Projects/Weather.png",
+    link: "https://weatherforcastes.netlify.app/",
+    tags: ["#HTML", "#Css", "#Java script", "#Figma"],
+    align: "right",
+    color: "cyan",
+  },
 ];
 
 const Projects = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 2000,
-      once: false,
-      offset: 50,
-      delay: 1,
-      easing: "ease",
-      mirror: true,
-      anchorPlacement: "top-bottom",
-    });
-  }, []);
   return (
     <>
       <section className="latest-work-container">
@@ -132,7 +137,7 @@ const Projects = () => {
                     className="project-img"
                   />
                   <div className="tooltip-text">
-                    Details are available to the side.
+                    Details are available on the side.
                   </div>
                 </div>
 
@@ -153,7 +158,10 @@ const Projects = () => {
                   </h3>
                   <span className="project-subtitle">{project.subtitle}</span>
                   <p className="project-description">{project.description}</p>
-                  <ul className="project-tags">
+                  <a className="sitelink" target="_blank" href={project.link}>
+                    <i class="fa-solid fa-link"></i> {project.link}
+                  </a>
+                  <ul className="project-tags pt-3">
                     {project.tags.map((tag, i) => (
                       <li key={i} className="tag-item">
                         {tag}

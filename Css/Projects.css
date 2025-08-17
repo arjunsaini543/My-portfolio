@@ -23,7 +23,24 @@
   z-index: 0;
   display: none;
 }
-
+.sitelink {
+  text-align: center;
+  font-size: 18px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  width: 40px;
+  height: 40px;
+  padding: 5px 10px;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  background-color: rgba(255, 0, 0, 0.493);
+  color: white;
+  transition: all 0.3s ease-in-out;
+}
+.sitelink:hover {
+  background-color: #ffafcc;
+  color: rgba(255, 0, 0, 0.493);
+}
 /* Show on medium and larger screens */
 @media (min-width: 768px) {
   .vertical-line {
@@ -152,8 +169,11 @@
 
 .project-tags {
   display: flex;
+  justify-content: flex-start;
+  align-items: center;
   flex-wrap: wrap;
   gap: 0.5rem;
+  font-weight: 500;
   font-size: 0.875rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   list-style: none;

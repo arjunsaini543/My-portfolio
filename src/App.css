@@ -164,24 +164,6 @@ body {
   transition: all 0.3s ease-in-out;
   z-index: 1;
 }
-
-.mobile-only-btn::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  will-change: transform;
-  height: 100%;
-  background: linear-gradient(120deg, rgba(255, 255, 255, 0.2), transparent);
-  transition: left 0.5s ease;
-  z-index: 0;
-}
-
-.mobile-only-btn:hover::before {
-  left: 100%;
-}
-
 .mobile-only-btn:hover {
   transform: scale(1.01);
   background: linear-gradient(90deg, #0072ff, #00c6ff);
@@ -218,6 +200,10 @@ body {
     border-radius: 6px;
     font-size: 1rem;
     cursor: pointer;
+  }
+  .nav-link {
+    background-color: #f5f7fa;
+    padding: 10px 10px;
   }
 }
 .spans {

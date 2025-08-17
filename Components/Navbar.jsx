@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 const Navbar = () => {
   const scrollDown = () => {
-    window.scrollBy({ top: 910, behavior: "smooth" });
+    window.scrollBy({ top: 920, behavior: "smooth" });
   };
   const [darkMode, setDarkMode] = useState(false);
 

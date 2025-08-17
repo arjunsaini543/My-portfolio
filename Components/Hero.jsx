@@ -5,7 +5,7 @@ const Hero = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const scrollDown = () => {
-    window.scrollBy({ top: 740, behavior: "smooth" });
+    window.scrollBy({ top: 725, behavior: "smooth" });
   };
   return (
     <>

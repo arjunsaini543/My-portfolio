@@ -30,6 +30,7 @@ const Contact = () => {
   return (
     <>
       <div
+        // data-aos="zoom-in"
         className="banner-image"
         style={{ backgroundImage: `url("./contact/banner-1.jpg")` }}
       >
@@ -55,7 +56,7 @@ const Contact = () => {
                   Number
                 </label>
                 <input
-                  type="tel"
+                  type="number"
                   name="phone"
                   placeholder="Enter your mobile number"
                   required

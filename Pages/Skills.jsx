@@ -1,5 +1,6 @@
 import Marquee from "react-fast-marquee";
 import "../Css/Skills.css";
+import CountUp from "react-countup";
 
 const Skills = () => {
   return (
@@ -62,29 +63,35 @@ const Skills = () => {
 
         <div className="aboutdivs">
           <div className="div1" data-aos="zoom-in-left">
-            <h1 className="">98%</h1>
-            <h3 className="text-warning">Html5</h3>
+            <h1>
+              <CountUp start={0} end={98} duration={2.75}></CountUp>%
+            </h1>
+            <h3>HTML5</h3>
           </div>
           <div className="div2" data-aos="zoom-in-left">
-            <h1 className="">92%</h1>
-            <h3 className="text-success">Css</h3>
+            <h1>
+              <CountUp start={0} end={92} duration={2.75}></CountUp>%
+            </h1>
+            <h3>Css</h3>
           </div>
           <div className="div3" data-aos="zoom-in-right">
-            <h1 className="">88%</h1>
-            <h3 className="text-danger">Java Script</h3>
+            <h1 className="text-warning">
+              <CountUp start={0} end={88} duration={2.75}></CountUp>%
+            </h1>
+            <h3 className="text-warning">Java Script</h3>
           </div>
 
           <div className="div4" data-aos="zoom-in-left">
-            <h1 className="">86%</h1>
+            <h1>
+              <CountUp start={0} end={86} duration={2.75}></CountUp>%
+            </h1>
             <h3>React Js</h3>
           </div>
           <div className="div5" data-aos="zoom-in-right">
-            <h1 className="">85%</h1>
+            <h1>
+              <CountUp start={0} end={85} duration={2.75}></CountUp>%
+            </h1>
             <h3>WordPress</h3>
-          </div>
-          <div className="div6" data-aos="zoom-in-right">
-            <h1 className="">37%</h1>
-            <h3>Figma</h3>
           </div>
         </div>
       </div>

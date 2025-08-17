@@ -1,11 +1,14 @@
 import Navbar from "../Components/Navbar";
 import "./App.css";
 import Footer from "../Components/Footer";
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import AOS from "aos";
+import "aos/dist/aos.css";
 import { useEffect } from "react";
 
 function App() {
+  const location = useLocation();
+
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -17,6 +20,13 @@ function App() {
       anchorPlacement: "top-bottom",
     });
   }, []);
+
+  useEffect(() => {
+    setTimeout(() => {
+      AOS.refresh();
+    }, 0);
+  }, [location.pathname]);
+
   return (
     <>
       <div className="canvas">
